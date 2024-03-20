@@ -12,7 +12,7 @@ class _WeatherLogging:
 
     def __print_in_log(self) -> None:
         """Записываем результат в лог"""
-        with open('file.log', 'w', encoding='UTF-8') as file:
+        with open('result.log', 'w', encoding='UTF-8') as file:
             file.write(f'{self.city}_{self.time}_{self.weather}')
 
     def execute(self) -> None:
